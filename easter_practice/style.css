@@ -1,0 +1,114 @@
+body {
+  margin: 0;
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+div,
+p {
+  margin: 0;
+}
+i {
+  display: inline-block;
+}
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+:root {
+  --margin1: 1rem 0;
+  --primary: #622f8d;
+  --btn_color: #f8c633;
+}
+.container {
+  width: 80%;
+  margin: auto;
+}
+.flex {
+  display: flex;
+}
+header {
+  width: 100%;
+}
+.logo_container {
+  background: linear-gradient(180deg, #622f8d 0, #622f8d 50%, #fff 0, #fff);
+}
+
+div.logo {
+  background-color: white;
+  text-align: center;
+  width: 10rem;
+  height: 8rem;
+}
+.menu {
+  margin: var(--margin1);
+}
+.menu > p {
+  margin-left: 1rem;
+}
+.logo_right {
+  flex-direction: column;
+  width: 100%;
+}
+.upper {
+  color: white;
+  font-weight: 700;
+}
+.login {
+  margin: var(--margin1);
+}
+.login > p {
+  margin-left: 1rem;
+}
+.login > p > i {
+  width: 2rem;
+  display: block;
+  height: 2rem;
+}
+.logo_right .upper {
+  justify-content: space-between;
+}
+.lower_container {
+  background-color: #fff;
+}
+.lower {
+  justify-content: space-between;
+  padding: 1rem 0;
+
+  float: right;
+}
+.date {
+  color: var(--primary);
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.ticket_info {
+  color: var(--primary);
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+.ticket_info a {
+  padding: 0.3rem 1.5rem;
+  background-color: var(--btn_color);
+  border-radius: 1.875rem;
+  vertical-align: middle;
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
+}
+/*mian */
+.main {
+  background: url(./img/SydneyRoyalEasterShow9.jpg) no-repeat center center;
+  background-size: cover;
+  height: 100vh;
+}
+.main_wrapper {
+  padding: 4rem 0;
+  background-color: #f6f7f6;
+}
+.main_p {
+  color: #1a1919;
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 30px;
+  margin: auto;
+  text-align: center;
+}
