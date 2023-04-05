@@ -1,6 +1,11 @@
 body {
   margin: 0;
   font-family: "Plus Jakarta Sans", sans-serif;
+  width: 100vw; /* viewport units FTW*/
+  max-width: 100%; /* so no horizontal scroll apears when vertical scrollbar is showing
+  
+  */
+  height: 100vh;
 }
 div,
 p {
@@ -21,6 +26,7 @@ a {
 .container {
   width: 80%;
   margin: auto;
+  height: 100%;
 }
 .flex {
   display: flex;
@@ -111,4 +117,50 @@ div.logo {
   line-height: 30px;
   margin: auto;
   text-align: center;
+}
+/*horizontal scroll*/
+.horizontal_scroll {
+  margin: 3rem 0;
+  height: 70vh;
+}
+.upper_navi {
+  justify-content: space-between;
+}
+.navi_left {
+  background-color: #1a1919;
+}
+.navi_right {
+  background-color: red;
+}
+.navi_right > div {
+  width: 1rem;
+  height: 1rem;
+}
+.h_scroll_container {
+  width: 100%;
+  overflow: hidden;
+  justify-content: space-between;
+  height: 90%;
+}
+.h_scroll {
+  width: 30%;
+  overflow: hidden;
+}
+.h_scroll:nth-child(1),
+.h_scroll:nth-child(2) {
+  margin-right: 2rem;
+}
+.h_scroll img {
+  max-height: 100%;
+  object-fit: fill;
+}
+/*info*/
+.info {
+  margin: 3rem 0;
+}
+.safety {
+  width: 50%;
+}
+.transport {
+  width: 50%;
 }
